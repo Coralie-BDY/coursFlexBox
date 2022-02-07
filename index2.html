@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Par défaut</h2>
+    <!-- Les éléments flexibles rétrécissent pour tenir sur la même ligne.
+      Par défaut la direction est row et flex-wrap vaut nowrap. -->
+    <div class="container">
+        <p class="item">1</p>
+        <p class="item">2</p>
+        <p class="item">3</p>
+        <p class="item">4</p>
+        <p class="item">5</p>
+        <p class="item">6</p>
+        <p class="item">7</p>
+        <p class="item">8</p>
+        <p class="item">9</p>
+        <p class="item">10</p>
+    </div>
+
+    <h2>Utilisation d'une autre direction</h2>
+
+    <div class="container column">
+        <p class="item">1</p>
+        <p class="item">2</p>
+        <p class="item">3</p>
+    </div>
+
+    <h2>Utilisation de wrap</h2>
+    <!-- Wrap permet d'autoriser les éléments à passer à la ligne -->
+    <div class="container wrap">
+        <p class="item">1</p>
+        <p class="item">2</p>
+        <p class="item">3</p>
+        <p class="item">4</p>
+        <p class="item">5</p>
+        <p class="item">6</p>
+        <p class="item">7</p>
+        <p class="item">8</p>
+        <p class="item">9</p>
+        <p class="item">10</p>
+    </div>
+
+    <h2>Utilisation de flex-flow</h2>
+    <div class="container flex-flow">
+        <!-- L'axe principal est ici vertical, et les éléments sont alignés du bas vers le haut (reverse).
+        Ils prennent plusieurs colonnes grâce à wrap, sinon leur hauteur serait réduite pour tenir sur 
+        une seule colonne.-->
+        <p class="item">1</p>
+        <p class="item">2</p>
+        <p class="item">3</p>
+        <p class="item">4</p>
+        <p class="item">5</p>
+        <p class="item">6</p>
+        <p class="item">7</p>
+        <p class="item">8</p>
+        <p class="item">9</p>
+        <p class="item">10</p>
+    </div>
+
+    <h2>justify-content</h2>
+    <h2>flex-start</h2>
+    <div class="flex-container flex-start">
+        <div class="flex-elem">1</div>
+        <div class="flex-elem">2</div>
+        <div class="flex-elem">3</div>
+</div>
+
+    <h2>flex-end</h2>
+    <div class="flex-container flex-end">
+        <div class="flex-elem">1</div>
+        <div class="flex-elem">2</div>
+        <div class="flex-elem">3</div>
+    </div>
+
+    <h2>center</h2>
+    <div class="flex-container center">
+        <div class="flex-elem">1</div>
+        <div class="flex-elem">2</div>
+        <div class="flex-elem">3</div>
+    </div>
+
+    <h2>space-between</h2>
+    <div class="flex-container space-between">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1">2</div>
+        <div class="flex-elem1">3</div>
+    </div>
+
+    <h2>space-around</h2>
+    <div class="flex-container space-around">
+        <div class="flex-elem1">2</div>
+        <div class="flex-elem1">3</div>
+    </div>
+
+    <h2>space-evenly</h2>
+    <div class="flex-container space-evenly">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1">2</div>
+        <div class="flex-elem1">3</div>
+    </div>
+
+
+
+
+    <h2>align-items</h2>
+    <h2>flex-start</h2>
+    <div class="flex-container1 flex-start1">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1">2</div>
+        <div class="flex-elem1">3</div>
+    </div>
+
+    <h2>flex-end</h2>
+    <div class="flex-container1 flex-end1">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1">2</div>
+        <div class="flex-elem1">3</div>
+    </div>
+
+    <h2>center</h2>
+    <div class="flex-container1 center1">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1">2</div>
+        <div class="flex-elem1">3</div>
+    </div>
+
+    <h2>stretch</h2>
+    <div class="flex-container1 stretch1">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1">2</div>
+        <div class="flex-elem1">3</div>
+    </div>
+
+    <h2>baseline vs start</h2>
+    <div class="flex-container1 flex-start1">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1 elem2">2</div>
+        <div class="flex-elem1 elem3">3</div>
+    </div>
+
+    <div class="flex-container1 baseline1">
+        <div class="flex-elem1">1</div>
+        <div class="flex-elem1 elem2">2</div>
+        <div class="flex-elem1 elem3">3</div>
+    </div>
+
+
+
+
+    <h2>space-around</h2>
+    <div class="container2">
+        <art class="flex-container2 flex-start2">
+            <art class="flex-elem2">1</art>
+            <art class="flex-elem2">2
+    </div>
+    <div class="flex-elem2">3</div>
+    </div>
+
+    <div class="flex-container2 flex-end2">
+        <div class="flex-elem2">1</div>
+        <div class="flex-elem2">2</div>
+        <div class="flex-elem2">3</div>
+    </div>
+
+    <div class="flex-container2 center2">
+        <div class="flex-elem2">1</div>
+        <div class="flex-elem2">2</div>
+        <div class="flex-elem2">3</div>
+    </div>
+
+    <div class="flex-container2 stretch2">
+        <div class="flex-elem2">1</div>
+        <div class="flex-elem2">2</div>
+        <div class="flex-elem2">3</div>
+    </div>
+
+    <div class="flex-container2 space-between2">
+        <div class="flex-elem2">1</div>
+        <div class="flex-elem2">2</div>
+        <div class="flex-elem2">3</div>
+    </div>
+
+    <div class="flex-container2 space-around2">
+        <div class="flex-elem2">1</div>
+        <div class="flex-elem2">2</div>
+        <div class="flex-elem2">3</div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
